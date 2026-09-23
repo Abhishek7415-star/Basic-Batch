@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    @media (max-width:600px) {
+        .Navbar{
+            flex-direction: column;
+            gap: 15px;
+        }
+        ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .Navbar {
+        background-color: red;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    ul>li>a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #Login>a {
+        text-decoration: none;
+        color: #000;
+    }
+    #search input{
+        border: none;
+        padding: 10px;
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    #search input:hover{
+        transform: scale(1.05);
+    }
+    #cart img{
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+    }
+    #cart img:hover{
+        transform: scale(1.1);
+    }
+
+.details{
+    background-color: aqua;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    row-gap: 10px;
+}
+
+.Products{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.Products div:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 10px 10px black;
+}
+
+</style>
+
+<body>
+    <nav class="Navbar">
+        <div>
+            <span>ShopNow</span>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+
+        <div id="search">
+            <input type="search" placeholder="search">
+        </div>
+
+        <div id="cart">
+            <a href="cart.html">
+                <img src="https://www.svgrepo.com/show/491359/cart.svg" alt="cart">
+            </a>
+        </div>
+
+        <div id="Login">
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <main class="details">
+        <h2> Welcome to ShopNow </h2>
+        <p>Best Products, Best Prices</p>
+
+        <button>Shop Now</button>
+    </main>
+
+    <section class="Products">
+
+    <div>
+    <img src="https://s.yimg.com/fz/api/res/1.2/KDZmNHCOfnlFkt_HCSK55w--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xOTI7cHhvZmY9NTA7cHlvZmY9NTA7cT04MDt3PTE5Mg--/https://s.yimg.com/pv/static/shopping/img/1707203373677/headphones-Over-Ear.jpg?v=39"
+    alt="Airphone">
+    <h2>Product</h2>
+    <h2>₹999</h2>
+    </div>
+
+    <div>
+    <img src="https://s.yimg.com/fz/api/res/1.2/KDZmNHCOfnlFkt_HCSK55w--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xOTI7cHhvZmY9NTA7cHlvZmY9NTA7cT04MDt3PTE5Mg--/https://s.yimg.com/pv/static/shopping/img/1707203373677/headphones-Over-Ear.jpg?v=39"
+    alt="Airphone">
+    <h2>Product</h2>
+    <h2>₹1999</h2>
+    </div>
+
+    <div>
+    <img src="https://s.yimg.com/fz/api/res/1.2/KDZmNHCOfnlFkt_HCSK55w--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xOTI7cHhvZmY9NTA7cHlvZmY9NTA7cT04MDt3PTE5Mg--/https://s.yimg.com/pv/static/shopping/img/1707203373677/headphones-Over-Ear.jpg?v=39"
+    alt="Airphone">
+    <h2>Product</h2>
+    <h2>₹2000</h2>
+    </div>
+
+</section>
+</body>
+</html>
